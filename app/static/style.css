@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
+
+body{
+    background: #0B131E;
+    color: white;  
+    padding-top: 50px;
+}
+
+.title{
+    text-align: center;
+    font-size: 67px;
+    font-weight: bold;
+    margin-bottom: 94px;
+}
+
+
+.container{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 816px;
+    height: 330px;
+    background: #202B3B ;
+    border-radius:45px ;
+    padding-left: 50px;
+    gap: 20px;
+    padding-top: 30px;
+}
+p{
+    font-size: 24px;
+    font-weight: lighter;
+}
+
+input{
+    padding: 12px 20px;
+    font-size:  26px;
+}
+.div2{
+    font-size: 36px;
+}
+
+button{
+    margin-top: 50px;
+    font-size: 25px;
+    padding: 20px;
+    width: 150px;
+    border-radius: 20px;
+}
+.info1{
+    margin: auto;
+    justify-content: space-between;
+    width: 906px;
+    height: 237px;
+    display: flex;
+}
+
+.info2{
+    display: flex;
+    margin: auto;
+    width: 906px;
+    height: 330px;
+    background: #202B3B ;
+    border-radius:45px ;
+    padding-top: 30px;
+    justify-content: space-evenly;
+}
+
+.cityname, .temp{
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.info2 p{
+    font-size: 40px;
+}
+.circle{
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+
+
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+
+
+.popup-notification {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #f44336; /* Red background for error */
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it's on top */
+    font-family: Arial, sans-serif;
+}
+
+/* Display notification when class 'show' is added */
+.popup-notification.show {
+    display: block;
+    animation: fadeInOut 4s ease-in-out;
+}
+
+/* Animation for fade-in and fade-out */
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translateY(-20px); }
+    10%, 90% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
